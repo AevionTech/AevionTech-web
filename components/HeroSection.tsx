@@ -5,9 +5,9 @@ import { Button } from "@/components/ui/button";
 import ConstellationCanvas from "./ConstellationCanvas";
 
 const HeroSection = () => {
-  const scrollToOrchard = (e: React.MouseEvent<HTMLAnchorElement>) => {
+  const scrollToLaplace = (e: React.MouseEvent<HTMLAnchorElement>) => {
     e.preventDefault();
-    const element = document.getElementById("orchard");
+    const element = document.getElementById("laplace");
     if (element) {
       const navbarHeight = 64; // h-16 = 4rem = 64px
       const elementPosition = element.getBoundingClientRect().top + window.pageYOffset;
@@ -115,9 +115,9 @@ const HeroSection = () => {
             className="flex flex-col sm:flex-row items-start gap-4 animate-fade-in opacity-0"
             style={{ animationDelay: "0.3s" }}
           >
-            <a href="#orchard" onClick={scrollToOrchard}>
+            <a href="#laplace" onClick={scrollToLaplace}>
               <Button variant="primary" size="lg">
-                View Project Orchard
+                View Project Laplace
                 <ArrowRight className="w-4 h-4 ml-2" />
               </Button>
             </a>
@@ -156,7 +156,7 @@ const HeroSection = () => {
                 Current Priority
               </div>
               <div className="font-mono text-xs text-foreground uppercase">
-                Project Orchard
+                Project Laplace
               </div>
             </div>
 
