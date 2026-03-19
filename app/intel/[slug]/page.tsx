@@ -7,12 +7,13 @@ import { intelArticles } from "../_data";
 
 export const dynamicParams = true;
 
-export default function IntelArticlePage({
+export default async function IntelArticlePage({
   params,
 }: {
-  params: { slug: string };
+  params: Promise<{ slug: string }>;
 }) {
-  const article = intelArticles[params.slug];
+  const { slug } = await params;
+  const article = intelArticles[slug];
 
   if (!article) notFound();
 
