@@ -14,10 +14,18 @@ const jetbrainsMono = JetBrains_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Aevion Tech: Home",
-  description: "Building the Next Interface",
+  title: "Aevion Technology Inc.",
+  description:
+    "Aevion moves beyond apps and screens. We build invisible intelligence—systems that quietly elevate the human experience without asking for your attention.",
+  applicationName: "Aevion Tech",
   icons: {
     icon: [{ url: "/icon.svg", type: "image/svg+xml" }],
+  },
+  openGraph: {
+    siteName: "Aevion Tech",
+    title: "Aevion Technology Inc.",
+    description:
+      "Aevion moves beyond apps and screens. We build invisible intelligence—systems that quietly elevate the human experience without asking for your attention.",
   },
 };
 
