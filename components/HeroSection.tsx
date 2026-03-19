@@ -9,7 +9,7 @@ const HeroSection = () => {
     e.preventDefault();
     const element = document.getElementById("laplace");
     if (element) {
-      const navbarHeight = 64; // h-16 = 4rem = 64px
+      const navbarHeight = 96; // h-24 = 6rem = 96px
       const elementPosition = element.getBoundingClientRect().top + window.pageYOffset;
       const offsetPosition = elementPosition - navbarHeight;
 
@@ -24,7 +24,7 @@ const HeroSection = () => {
     e.preventDefault();
     const element = document.getElementById("labs");
     if (element) {
-      const navbarHeight = 64; // h-16 = 4rem = 64px
+      const navbarHeight = 96; // h-24 = 6rem = 96px
       const elementPosition = element.getBoundingClientRect().top + window.pageYOffset;
       const offsetPosition = elementPosition - navbarHeight;
 
@@ -176,7 +176,7 @@ const HeroSection = () => {
                 HQ
               </div>
               <div className="font-mono text-xs text-foreground uppercase">
-                Est. 2024
+                NYC
               </div>
             </div>
           </div>

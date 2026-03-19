@@ -1,11 +1,14 @@
 "use client";
 
+import Image from "next/image";
+import type { MouseEvent } from "react";
+
 const TerminalFooter = () => {
-  const scrollToSection = (e: React.MouseEvent<HTMLAnchorElement>, sectionId: string) => {
+  const scrollToSection = (e: MouseEvent<HTMLAnchorElement>, sectionId: string) => {
     e.preventDefault();
     const element = document.getElementById(sectionId);
     if (element) {
-      const navbarHeight = 64; // h-16 = 4rem = 64px
+      const navbarHeight = 96; // h-24 = 6rem = 96px
       const elementPosition = element.getBoundingClientRect().top + window.pageYOffset;
       const offsetPosition = elementPosition - navbarHeight;
 
@@ -23,11 +26,17 @@ const TerminalFooter = () => {
         <div className="grid grid-cols-2 md:grid-cols-4 gap-12 lg:gap-16 mb-16 justify-items-center">
           {/* Col 1: Identity */}
           <div className="col-span-2 md:col-span-1 text-center">
-            <h3 className="text-2xl lg:text-3xl font-bold text-foreground tracking-tight">
-              AEVION
-            </h3>
+            <div className="flex justify-center">
+              <Image
+                src="/logo.svg"
+                alt="Aevion Technology"
+                width={440}
+                height={96}
+                className="h-24 w-auto"
+              />
+            </div>
             <p className="font-mono text-[10px] text-muted-foreground uppercase tracking-widest mt-3">
-              NYC 2025
+              NYC 2026
             </p>
           </div>
 

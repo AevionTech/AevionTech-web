@@ -1,5 +1,6 @@
 "use client";
 
+import Image from "next/image";
 import { Menu, X } from "lucide-react";
 import { useState } from "react";
 
@@ -15,12 +16,17 @@ const Navbar = () => {
   return (
     <nav className="fixed top-0 left-0 right-0 z-50 backdrop-blur-md bg-background/80 border-b border-foreground/10">
       <div className="container mx-auto px-6">
-        <div className="flex items-center justify-between h-16">
+        <div className="flex items-center justify-between h-24">
           {/* Logo */}
           <a href="/" className="flex items-center gap-3 group">
-            <span className="text-foreground font-bold text-lg tracking-tight uppercase font-mono">
-              [ AEVION ]
-            </span>
+            <Image
+              src="/logo.svg"
+              alt="Aevion Technology"
+              width={360}
+              height={80}
+              priority
+              className="h-20 w-auto"
+            />
             <span className="text-muted-foreground font-mono text-xs hidden sm:inline">
               / TECHNOLOGY INC.
             </span>
@@ -38,6 +44,12 @@ const Navbar = () => {
                 {/* {link.name} */}
               </a>
             ))}
+            <a
+              href="/intel"
+              className="px-4 py-2 border border-foreground text-foreground font-medium text-sm uppercase tracking-wide transition-all duration-200 hover:bg-foreground hover:text-background"
+            >
+              Intel
+            </a>
             <a
               href="mailto:support@aeviontech.com"
               className="px-4 py-2 border border-foreground text-foreground font-medium text-sm uppercase tracking-wide transition-all duration-200 hover:bg-foreground hover:text-background"
@@ -72,9 +84,16 @@ const Navbar = () => {
                 </a>
               ))}
               <a
+                href="/intel"
+                onClick={() => setIsOpen(false)}
+                className="px-4 py-2 border border-foreground text-foreground font-medium text-sm text-center uppercase tracking-wide transition-all duration-200 hover:bg-foreground hover:text-background"
+              >
+                Intel
+              </a>
+              <a
                 href="mailto:support@aeviontech.com"
                 onClick={() => setIsOpen(false)}
-                className="px-4 py-2 border border-foreground text-foreground font-medium text-sm text-center uppercase tracking-wide transition-all duration-200"
+                className="px-4 py-2 border border-foreground text-foreground font-medium text-sm text-center uppercase tracking-wide transition-all duration-200 hover:bg-foreground hover:text-background"
               >
                 Contact
               </a>
