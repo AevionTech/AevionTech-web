@@ -14,7 +14,7 @@ const jetbrainsMono = JetBrains_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Aevion Technology Inc.",
+  title: "Aevion Technology: Home",
   description: "Building the Next Interface",
 };
 
