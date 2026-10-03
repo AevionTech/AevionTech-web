@@ -5,9 +5,9 @@ import { Button } from "@/components/ui/button";
 import ConstellationCanvas from "./ConstellationCanvas";
 
 const HeroSection = () => {
-  const scrollToLaplace = (e: React.MouseEvent<HTMLAnchorElement>) => {
+  const scrollToMosy = (e: React.MouseEvent<HTMLAnchorElement>) => {
     e.preventDefault();
-    const element = document.getElementById("laplace");
+    const element = document.getElementById("mosy");
     if (element) {
       const navbarHeight = 96; // h-24 = 6rem = 96px
       const elementPosition = element.getBoundingClientRect().top + window.pageYOffset;
@@ -20,20 +20,6 @@ const HeroSection = () => {
     }
   };
 
-  const scrollToLabs = (e: React.MouseEvent<HTMLAnchorElement>) => {
-    e.preventDefault();
-    const element = document.getElementById("labs");
-    if (element) {
-      const navbarHeight = 96; // h-24 = 6rem = 96px
-      const elementPosition = element.getBoundingClientRect().top + window.pageYOffset;
-      const offsetPosition = elementPosition - navbarHeight;
-
-      window.scrollTo({
-        top: offsetPosition,
-        behavior: "smooth",
-      });
-    }
-  };
   return (
     <section className="relative min-h-screen flex flex-col overflow-hidden bg-background">
       {/* Grid Pattern Background */}
@@ -98,7 +84,7 @@ const HeroSection = () => {
           >
             <span className="text-foreground">Intelligence,</span>
             <br />
-            <span className="text-foreground whitespace-nowrap">Woven into Life</span>
+            <span className="text-foreground">Woven into Life</span>
             <span className="text-accent">.</span>
           </h1>
 
@@ -107,7 +93,7 @@ const HeroSection = () => {
             className="text-base sm:text-lg text-muted-foreground max-w-xl mb-12 animate-fade-in opacity-0 leading-relaxed"
             style={{ animationDelay: "0.2s" }}
           >
-            We build the invisible layer where artificial intelligence meets human reality. From finding love to predicting the future, we make complex algorithms feel like second nature.
+            We build the invisible layer where artificial intelligence meets human reality. Meet Mosy, our latest product in development. Join the waitlist to hear when early access opens.
           </p>
 
           {/* CTA Buttons */}
@@ -115,17 +101,17 @@ const HeroSection = () => {
             className="flex flex-col sm:flex-row items-start gap-4 animate-fade-in opacity-0"
             style={{ animationDelay: "0.3s" }}
           >
-            <a href="#laplace" onClick={scrollToLaplace}>
-              <Button variant="primary" size="lg">
-                View Project Laplace
+            <Button variant="primary" size="lg" asChild>
+              <a href="#mosy" onClick={scrollToMosy}>
+                Meet Mosy
                 <ArrowRight className="w-4 h-4 ml-2" />
-              </Button>
-            </a>
-            <a href="#labs" onClick={scrollToLabs}>
-              <Button variant="outline" size="lg">
-                Access Labs
-              </Button>
-            </a>
+              </a>
+            </Button>
+            <Button variant="outline" size="lg" asChild>
+              <a href="#waitlist">
+                Join Waitlist
+              </a>
+            </Button>
           </div>
         </div>
       </div>
@@ -156,7 +142,7 @@ const HeroSection = () => {
                 Current Priority
               </div>
               <div className="font-mono text-xs text-foreground uppercase">
-                Project Laplace
+                Mosy
               </div>
             </div>
 

@@ -14,18 +14,18 @@ const jetbrainsMono = JetBrains_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Aevion Technology Inc.",
+  title: "Mosy | Aevion Technology Inc.",
   description:
-    "Aevion moves beyond apps and screens. We build invisible intelligence—systems that quietly elevate the human experience without asking for your attention.",
+    "Meet Mosy, the latest product from Aevion Technology. Join the waitlist for early access and launch updates.",
   applicationName: "Aevion Tech",
   icons: {
     icon: [{ url: "/icon.svg", type: "image/svg+xml" }],
   },
   openGraph: {
     siteName: "Aevion Tech",
-    title: "Aevion Technology Inc.",
+    title: "Mosy | Aevion Technology Inc.",
     description:
-      "Aevion moves beyond apps and screens. We build invisible intelligence—systems that quietly elevate the human experience without asking for your attention.",
+      "Meet Mosy, the latest product from Aevion Technology. Join the waitlist for early access and launch updates.",
   },
 };
 

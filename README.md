@@ -20,6 +20,32 @@ You can start editing the page by modifying `app/page.tsx`. The page auto-update
 
 This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
 
+## Mosy waitlist
+
+The homepage features Mosy and an email signup form. Intel routes are hidden by
+`app/intel/layout.tsx`; the original articles remain in the repository.
+
+The waitlist stores signups in the `waitlist` collection in Cloud Firestore. In
+Firebase Console, enable Firestore and open **Project settings > Service accounts**.
+Generate a private key and copy its `project_id`, `client_email`, and `private_key`
+values into `.env.local` using the names in `.env.example`. Add the same three
+server-side environment variables to the deployment. Never commit the downloaded
+JSON key, paste it into chat, or prefix these variables with `NEXT_PUBLIC_`.
+
+`POST /api/waitlist` validates and normalizes email addresses, checks the request
+origin, and rejects submissions that fill the hidden spam field. It creates one
+Firestore document per normalized email using a non-reversible SHA-256 document ID,
+so repeat submissions succeed without creating duplicates. Each document contains
+`email`, `product`, `source`, `consent`, and a server-generated `createdAt` timestamp.
+The Admin SDK runs only in the server route; the browser receives no Firebase key or
+direct database access. Configure rate limiting at the hosting layer before a large
+public launch.
+
+The repository includes `firestore.rules`, which denies all client-side access.
+Deploy those rules with the Firebase CLI or paste them into **Firestore Database >
+Rules** in Firebase Console and publish them. Server-side Admin SDK writes continue
+to work because Admin credentials do not use client security rules.
+
 ## Learn More
 
 To learn more about Next.js, take a look at the following resources:

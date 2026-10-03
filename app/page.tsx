@@ -1,7 +1,6 @@
 import Navbar from "@/components/Navbar";
 import HeroSection from "@/components/HeroSection";
-import OrchardSection from "@/components/OrchardSection";
-import LaplaceSection from "@/components/LaplaceSection";
+import MosySection from "@/components/MosySection";
 import FocusAreasSection from "@/components/FocusAreasSection";
 import ThesisSection from "@/components/ThesisSection";
 import TerminalFooter from "@/components/TerminalFooter";
@@ -11,8 +10,7 @@ export default function Home() {
     <div className="min-h-screen bg-background">
       <Navbar />
       <HeroSection />
-      {/* <OrchardSection /> */}
-      <LaplaceSection />
+      <MosySection />
       <FocusAreasSection />
       <ThesisSection />
       <TerminalFooter />

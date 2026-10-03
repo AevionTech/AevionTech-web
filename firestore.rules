@@ -1,0 +1,11 @@
+rules_version = '2';
+
+service cloud.firestore {
+  match /databases/{database}/documents {
+    // Mosy uses the Firebase Admin SDK from its server route. No Firestore data
+    // should be readable or writable directly from a browser or mobile client.
+    match /{document=**} {
+      allow read, write: if false;
+    }
+  }
+}

@@ -48,11 +48,11 @@ const TerminalFooter = () => {
             <ul className="space-y-3">
               <li>
                 <a 
-                  href="#orchard" 
-                  onClick={(e) => scrollToSection(e, "orchard")}
+                  href="#mosy"
+                  onClick={(e) => scrollToSection(e, "mosy")}
                   className="text-foreground hover:text-accent transition-colors text-sm"
                 >
-                  Orchard <span className="font-mono text-[10px] text-accent">(Live)</span>
+                  Mosy <span className="font-mono text-[10px] text-accent">(Coming soon)</span>
                 </a>
               </li>
               <li>
