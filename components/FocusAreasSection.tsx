@@ -1,4 +1,4 @@
-import { Bot, TrendingUp, Box, Cloud } from "lucide-react";
+import { Bot, BrainCircuit, Gamepad2, Cloud } from "lucide-react";
 
 const focusAreas = [
   {
@@ -9,16 +9,16 @@ const focusAreas = [
     index: "01",
   },
   {
-    title: "Prediction Markets",
-    description: "Decentralized crypto intelligence.",
-    icon: TrendingUp,
+    title: "ML",
+    description: "Machine learning systems and intelligence.",
+    icon: BrainCircuit,
     span: "lg:col-span-1",
     index: "02",
   },
   {
-    title: "3D Graphics",
-    description: "Immersive environments and rendering.",
-    icon: Box,
+    title: "Game",
+    description: "Interactive worlds and gameplay.",
+    icon: Gamepad2,
     span: "lg:col-span-1",
     index: "03",
   },
@@ -33,7 +33,7 @@ const focusAreas = [
 
 const FocusAreasSection = () => {
   return (
-    <section id="labs" className="relative py-24 lg:py-32 bg-background scroll-mt-16">
+    <section id="focus" className="relative py-24 lg:py-32 bg-background scroll-mt-16">
       {/* Subtle grid pattern */}
       <div 
         className="absolute inset-0 opacity-[0.05]"

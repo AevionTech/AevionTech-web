@@ -55,15 +55,6 @@ const TerminalFooter = () => {
                   Mosy <span className="font-mono text-[10px] text-accent">(Coming soon)</span>
                 </a>
               </li>
-              <li>
-                <a 
-                  href="#labs" 
-                  onClick={(e) => scrollToSection(e, "labs")}
-                  className="text-foreground hover:text-accent transition-colors text-sm"
-                >
-                  Labs <span className="font-mono text-[10px] text-muted-foreground">(Beta)</span>
-                </a>
-              </li>
             </ul>
           </div>
 
