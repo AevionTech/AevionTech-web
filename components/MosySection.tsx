@@ -16,7 +16,7 @@ export default function MosySection() {
                 alt="Mosy"
                 width={1100}
                 height={360}
-                className="h-auto w-full max-w-[540px]"
+                className="h-auto w-[60%] max-w-[324px] -translate-x-[9%]"
               />
             </h2>
             <p className="font-mono text-xs text-accent uppercase tracking-widest">
