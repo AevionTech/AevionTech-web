@@ -1,3 +1,4 @@
+import Image from "next/image";
 import WaitlistForm from "@/components/WaitlistForm";
 
 export default function MosySection() {
@@ -9,8 +10,14 @@ export default function MosySection() {
         </p>
         <div className="grid gap-12 lg:grid-cols-2 lg:gap-20 items-start">
           <div className="space-y-6">
-            <h2 className="text-5xl sm:text-6xl lg:text-7xl font-bold tracking-tight">
-              Mosy<span className="text-accent">.</span>
+            <h2>
+              <Image
+                src="/mosy-logo-white-transparent.png"
+                alt="Mosy"
+                width={1100}
+                height={360}
+                className="h-auto w-full max-w-[540px]"
+              />
             </h2>
             <p className="font-mono text-xs text-accent uppercase tracking-widest">
               In development / Coming soon
