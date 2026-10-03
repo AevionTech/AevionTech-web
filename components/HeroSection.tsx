@@ -67,16 +67,6 @@ const HeroSection = () => {
       {/* Main Content */}
       <div className="relative z-10 flex-1 flex flex-col justify-center container mx-auto px-6 pt-32 pb-40">
         <div className="max-w-4xl">
-          {/* Tag */}
-          <div 
-            className="inline-flex items-center gap-2 mb-8 animate-fade-in opacity-0"
-            style={{ animationDelay: "0s" }}
-          >
-            <span className="font-mono text-xs text-muted-foreground uppercase tracking-widest">
-              [ VENTURE STUDIO ]
-            </span>
-          </div>
-
           {/* Main Heading - Left Aligned */}
           <h1 
             className="text-5xl sm:text-6xl md:text-7xl lg:text-8xl font-bold tracking-tight mb-8 animate-fade-in opacity-0 leading-[0.9]"
@@ -93,7 +83,7 @@ const HeroSection = () => {
             className="text-base sm:text-lg text-muted-foreground max-w-xl mb-12 animate-fade-in opacity-0 leading-relaxed"
             style={{ animationDelay: "0.2s" }}
           >
-            We build the invisible layer where artificial intelligence meets human reality. Meet Mosy, our latest product in development. Join the waitlist to hear when early access opens.
+            We build the invisible layer where artificial intelligence meets human reality. Meet Mosy, our latest product in development.
           </p>
 
           {/* CTA Buttons */}
@@ -105,11 +95,6 @@ const HeroSection = () => {
               <a href="#mosy" onClick={scrollToMosy}>
                 Meet Mosy
                 <ArrowRight className="w-4 h-4 ml-2" />
-              </a>
-            </Button>
-            <Button variant="outline" size="lg" asChild>
-              <a href="#waitlist">
-                Join Waitlist
               </a>
             </Button>
           </div>
@@ -131,7 +116,7 @@ const HeroSection = () => {
               <div className="flex items-center gap-2">
                 <span className="w-2 h-2 rounded-full bg-accent animate-pulse" />
                 <span className="font-mono text-xs text-foreground uppercase">
-                  Operational / Incubating
+                  Prototyping
                 </span>
               </div>
             </div>
@@ -152,7 +137,7 @@ const HeroSection = () => {
                 Sectors
               </div>
               <div className="font-mono text-xs text-foreground uppercase">
-                Social • Crypto • AI Agents
+                Consumer
               </div>
             </div>
 

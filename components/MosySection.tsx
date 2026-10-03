@@ -26,10 +26,6 @@ export default function MosySection() {
               Mosy is the taste-driven decision layer for diners and the
               performance UGC engine for food business growth.
             </p>
-            <p className="text-sm text-muted-foreground leading-relaxed max-w-lg">
-              Join the waitlist for early access news and launch updates.
-              We’ll let you know when Mosy is ready for you.
-            </p>
           </div>
           <div id="waitlist" className="border border-border bg-background p-6 sm:p-8 scroll-mt-32">
             <h3 className="text-2xl font-semibold mb-3">Get early access</h3>
