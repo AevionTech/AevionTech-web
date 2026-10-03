@@ -90,11 +90,16 @@ const ThesisSection = () => {
           {/* Right: Scrolling Text */}
           <div className="space-y-12 lg:pt-8">
             <p className="text-lg lg:text-xl text-muted-foreground leading-relaxed">
-              The barrier between digital logic and physical reality is dissolving. Whether finding love (Orchard) or navigating markets (Crypto), we believe technology should support your life, not distract from it.
+              Some of the most meaningful signals in everyday life have never
+              been captured as usable data. Taste, context, intent, and lived
+              experience shape our decisions, yet remain largely invisible to
+              technology.
             </p>
             
             <p className="text-lg lg:text-xl text-muted-foreground leading-relaxed">
-              Aevion moves beyond apps and screens. We build invisible intelligence—systems that quietly elevate the human experience without asking for your attention.
+              Aevion explores this overlooked layer of human reality. We build
+              products that turn signals already present in the world into
+              useful intelligence for people and businesses.
             </p>
 
             {/* Visual separator */}
