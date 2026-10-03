@@ -16,8 +16,8 @@ export default function MosySection() {
               In development / Coming soon
             </p>
             <p className="text-lg sm:text-xl text-muted-foreground leading-relaxed max-w-lg">
-              The next chapter from Aevion Technology. Be among the first to
-              experience Mosy.
+              Mosy is the taste-driven decision layer for diners and the
+              performance UGC engine for food business growth.
             </p>
             <p className="text-sm text-muted-foreground leading-relaxed max-w-lg">
               Join the waitlist for early access news and launch updates.
